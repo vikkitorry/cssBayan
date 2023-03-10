@@ -19,22 +19,40 @@ h1 {
     grid-template-columns: 1fr 6fr 1fr;
 }
 .mems__wrapper {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 .accordion {
+    border-radius: 1%;
+    padding: 0.2em;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background: rgba(113, 111, 111, 0.714)
 }
 .accordion__item{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     border-color: beige;
     align-items: center;
     width: 100%;
-    border-bottom: 0.1em solid rgb(216, 0, 0);
+    border-bottom: 0.1em solid rgb(48, 48, 48);
+}
+.item__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.label {
+    display: block;
+    width: 100%;
 }
 .text__container {
+    cursor: pointer;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -56,8 +74,9 @@ h1 {
     color: black;
 }
 .mem-pic{
-    width: 0;
-    height: 0;
+    cursor: pointer;
+    width: 0%;
+    height: 0%;
     padding: 1em;
     transition: all 1s;
 }
@@ -68,13 +87,12 @@ h1 {
 }
 .accordion__item:hover .icon {
     transition: all 1s;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 .accordion__radio {
-    height: 100%;
-    width: 100%;
+    opacity: 0;
 }
-.accordion__radio:checked .mem-pic{
+.accordion__radio:checked ~ .img__container .mem-pic{
     width: 100%;
     height: 100%;
 }
