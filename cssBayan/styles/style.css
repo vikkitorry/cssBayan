@@ -126,6 +126,15 @@ h1 {
         color: rgb(19, 19, 19);
     }
 }
+.accordion__item:active .accordion__item-tittle {
+    color: rgba(67, 67, 67, 0.608);
+}
+.accordion__item:active .icon {
+    opacity: 0.3;
+}
+.accordion__item:active .mem-pic {
+    opacity: 0.5;
+}
 @media (max-width: 820px) {
     .main__container{
         display: grid;
