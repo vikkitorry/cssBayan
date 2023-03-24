@@ -1,6 +1,6 @@
 body {
     scroll-behavior: smooth;
-    background: rgba(21, 21, 21, 0.808);
+    background: rgba(21, 21, 21, 0.871);
 }
 * {
     box-sizing: border-box;
@@ -10,7 +10,7 @@ h1 {
     color: rgb(255, 255, 255);
     font-size: 1.8em;
     margin: 0.4em;
-    text-align: left;
+    text-align: center;
     font-weight: 800;
     text-shadow: #151515 0.5rem 0.5rem 1rem;
 }
@@ -35,7 +35,7 @@ h1 {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    background: rgba(132, 132, 132, 0.649);
+    background: rgba(88, 88, 88, 0.649);
     box-shadow: 1rem 1rem 1rem rgba(48, 47, 47, 0.34);
 }
 .accordion__item{
@@ -57,7 +57,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(150, 145, 145, 0.649);
+    background: rgba(100, 99, 99, 0.649);
     border-radius: 0.5rem;
     box-shadow: 1rem 1rem 1rem rgba(58, 58, 58, 0.352);
 }
